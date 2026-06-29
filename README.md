@@ -3,13 +3,14 @@
 ![Teaching](https://img.shields.io/badge/module-DE5M5-blue)
 ![Python Version](https://img.shields.io/badge/python-3.9--3.12-blue.svg)
 
-![Open Issues](https://img.shields.io/github/issues/YOUR_USERNAME/YOUR_REPO)
-![Open PRs](https://img.shields.io/github/issues-pr/YOUR_USERNAME/YOUR_REPO)
-![Last Commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/YOUR_REPO)
-![CI Pipeline Badge](https://github.com/YOUR_USERNAME/YOUR_REPO/actions/workflows/ci.yml/badge.svg)
+![Open Issues](https://img.shields.io/github/issues/ndcbtfncial/nd-qalibpipeline)
+![Open PRs](https://img.shields.io/github/issues-pr/ndcbtfncial/nd-qalibpipeline)
+![Last Commit](https://img.shields.io/github/last-commit/ndcbtfncial/nd-qalibpipeline)
+![CI Pipeline Badge](https://github.com/ndcbtfncial/nd-qalibpipeline/actions/workflows/ci.yml/badge.svg)
 
 <mark>*Replace `ndcbtfncial/nd-qalibpipeline` with your details*</mark>
 This is a local edit!
+This is a change using VS code!
 
 ## Project Overview
 [TODO: Describe the library's data quality problem]
@@ -33,8 +34,8 @@ git config --global user.name "Your Name"
 ### Local Development
 ```bash
 # Clone this repository
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-cd YOUR_REPO
+git clone https://github.com/ndcbtfncial/nd-qalibpipeline.git
+cd nd-qalibpipeline
 
 # Create virtual environment
 python -m venv venv
