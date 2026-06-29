@@ -8,7 +8,6 @@
 ![Last Commit](https://img.shields.io/github/last-commit/ndcbtfncial/nd-qalibpipeline)
 ![CI Pipeline Badge](https://github.com/ndcbtfncial/nd-qalibpipeline/actions/workflows/ci.yml/badge.svg)
 
-<mark>*Replace `ndcbtfncial/nd-qalibpipeline` with your details*</mark>
 This is a local edit!
 This is a change using VS code!
 
