@@ -27,7 +27,7 @@ from data_processing.ingestion import load_csv, load_json, load_excel
 from data_processing.cleaning import (
     remove_duplicates,
     handle_missing_values,
-    # standardize_dates,
+    #standardize_dates,
 )
 from data_processing.validation import validate_isbn
 
@@ -178,6 +178,8 @@ def process_catalogue_data():
         df_clean['ISBN_valid'] = df_clean['ISBN'].apply(validate_isbn)
         invalid_count = (~df_clean['ISBN_valid']).sum()
         print(f"  - Found {invalid_count:,} invalid ISBNs")
+    # else:
+    #     print("no isbn cols found")
 
     # Step 4: Save cleaned data
     print("\n[4/4] Saving cleaned data...")
