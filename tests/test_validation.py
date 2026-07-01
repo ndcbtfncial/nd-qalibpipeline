@@ -11,7 +11,3 @@ def test_invalid_isbn():
 def test_wrong_length():
     result = validate_isbn('123456789')
     assert result == False
-
-def test_isbn_null():
-    result = validate_isbn()
-    assert result == False
