@@ -24,22 +24,21 @@ def sample_with_missing():
 
 def test_remove_duplicates_reduces_rows(sample_with_duplicates):
     result = remove_duplicates(sample_with_duplicates, subset=['id'])
-    # TODO: assert result has 3 rows
+    assert len(result) == 3
 
 def test_remove_duplicates_ids_are_unique(sample_with_duplicates):
     result = remove_duplicates(sample_with_duplicates, subset=['id'])
-    # TODO: assert that id values are unique
+    assert result['id'].is_unique
 
 def test_handle_missing_drop(sample_with_missing):
     result = handle_missing_values(sample_with_missing, strategy='drop')
-    # TODO: assert result has no missing values
+    assert result.isnull().sum().sum() == 0
 
 def test_handle_missing_fill(sample_with_missing):
     result = handle_missing_values(sample_with_missing, strategy='fill', fill_value=0)
-    # TODO: assert result has 3 rows
+    assert len(result) == 3
 
-@pytest.mark.skip(reason="This function is not in use")
 def test_standardize_dates():
     df = pd.DataFrame({'date': ['2024-01-01', '2024-06-15']})
     result = standardize_dates(df, date_columns=['date'])
-    # TODO: assert the date column is datetime type
+    assert pd.api.types.is_datetime64_any_dtype(result['date'])
